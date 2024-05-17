@@ -54,6 +54,22 @@ kubectl auth can-i get pods --namespace=default --as=siri
 
 yes
 
+Save this YAML to a file named pod-reader-role.yaml and apply it
+
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: default
+  name: pod-reader
+rules:
+- apiGroups: [""]
+  resources: ["pods"]
+  verbs: ["get", "list", "watch"]
+  
+  kubectl apply -f pod-reader-role.yaml
+
+
+
 
 Save this YAML to a file named read-pods-binding.yaml and apply it:
 
