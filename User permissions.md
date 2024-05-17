@@ -52,7 +52,7 @@ no
 
 kubectl auth can-i get pods --namespace=default --as=siri
 
-yes
+
 ================================================================================
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
@@ -66,7 +66,7 @@ rules:
 ========================================================================================================
 Save this YAML to a file named pod-reader-role.yaml and apply it:
 
-kubectl apply -f pod-reader-role.yaml
+
 =============================================================================================
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
