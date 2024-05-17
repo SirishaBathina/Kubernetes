@@ -52,39 +52,12 @@ no
 
 kubectl auth can-i get pods --namespace=default --as=siri
 
-
-================================================================================
-apiVersion: rbac.authorization.k8s.io/v1
-kind: Role
-metadata:
-  namespace: default
-  name: pod-reader
-rules:
-- apiGroups: [""]
-  resources: ["pods"]
-  verbs: ["get", "list", "watch"]
-========================================================================================================
-Save this YAML to a file named pod-reader-role.yaml and apply it:
+yes
 
 
-=============================================================================================
-apiVersion: rbac.authorization.k8s.io/v1
-kind: RoleBinding
-metadata:
-  name: read-pods-binding
-  namespace: default
-subjects:
-- kind: User
-  name: siri
-  apiGroup: rbac.authorization.k8s.io
-roleRef:
-  kind: Role
-  name: pod-reader
-  apiGroup: rbac.authorization.k8s.io
-===========================================================================================================
- Save this YAML to a file named read-pods-binding.yaml and apply it:
-===============================================================================================
- kubectl apply -f read-pods-binding.yaml
+
+
+
 
 
 
