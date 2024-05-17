@@ -9,9 +9,9 @@ https://aungzanbaw.medium.com/a-step-by-step-guide-to-creating-users-in-kubernet
 4.	Create a configuration specific to the user.
 5.	Add RBAC rules for the user or their group.
 1. Generate certificates for the user.
-
+```sh
 openssl genpkey -out siri.key -algorithm Ed25519
-
+```
 
  
 *openssl req -new -key siri.key -out siri.csr -subj "/CN=siri,/O=edit"*
