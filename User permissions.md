@@ -1,6 +1,6 @@
 
-A Step-by-Step Guide to Creating Users in Kubernetes
-Followed by this Url
+#A Step-by-Step Guide to Creating Users in Kubernetes
+##Followed by this Url
 
 https://aungzanbaw.medium.com/a-step-by-step-guide-to-creating-users-in-kubernetes-6a5a2cfd8c71
 1.	Generate certificates for the user.
@@ -14,7 +14,7 @@ openssl genpkey -out siri.key -algorithm Ed25519
 
 
  
-openssl req -new -key siri.key -out siri.csr -subj "/CN=siri,/O=edit"
+*openssl req -new -key siri.key -out siri.csr -subj "/CN=siri,/O=edit"*
 2. Create a certificate signing request (CSR).
 
 cat siri.csr | base64 | tr -d "\n"
