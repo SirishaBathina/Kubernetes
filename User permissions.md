@@ -75,7 +75,21 @@ yes
 
 kubectl apply -f read-pods-binding.yaml
 
-
+```sh
+sudo mkdir /home/john/.kube
+```
+```sh
+sudo cp .kube/config /home/john/.kube/config
+```
+```sh
+sudo vi /home/john/.kube/config
+```
+```sh
+sudo chown john:john /home/john/.kube/config
+```
+```sh
+sudo chown -R john:john /home/john/.kube/
+```
 
 
 
