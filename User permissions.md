@@ -76,19 +76,19 @@ yes
 kubectl apply -f read-pods-binding.yaml
 
 ```sh
-sudo mkdir /home/john/.kube
+sudo mkdir /home/siri/.kube
 ```
 ```sh
-sudo cp .kube/config /home/john/.kube/config
+sudo cp .kube/config /home/siri/.kube/config
 ```
 ```sh
-sudo vi /home/john/.kube/config
+sudo vi /home/siri/.kube/config
 ```
 ```sh
-sudo chown john:john /home/john/.kube/config
+sudo chown siri:siri /home/john/.kube/config
 ```
 ```sh
-sudo chown -R john:john /home/john/.kube/
+sudo chown -R siri:siri /home/john/.kube/
 ```
 
 
