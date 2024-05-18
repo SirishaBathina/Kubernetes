@@ -47,14 +47,10 @@ CloudFormation
 ```sh
 eksctl create cluster --name cluster-name --region region-name --node-        type instance-type --nodes-min 2 --nodes-max 2  
 ```
-
-   #   To create the EKS cluster
-
-    ```sh
-    eksctl create cluster --name ekssiri-cluster28 --region ap-south-1 --node-   type t2.small --nodes-min 2 --nodes-max 2
+# To create the EKS cluster
+```sh
+eksctl create cluster --name ekssiri-cluster28 --region ap-south-1 --node-   type t2.small --nodes-min 2 --nodes-max 2
 ```
- 
- 
 # 3.   To delete the EKS cluster
 ```sh
 eksctl delete cluster --name=ekssiri-cluster28 --region=ap-south-1
