@@ -21,17 +21,19 @@ sudo apt update
 ```sh
    sudo apt-get install unzip 
 ```
-    ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
-                                  (Or)
+   
 
 ```sh
 sudo snap install aws-cli --classic
 ```
+```sh
  aws –version
+```
 ```sh
  aws configure
 ```
 #  Install kubectl on ubuntu instance
+
 ```sh
 curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
 ```
