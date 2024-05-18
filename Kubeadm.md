@@ -1,9 +1,9 @@
 
-# Please refer below url
+#Please refer below url
 
-# https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
+#https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
 
-# https://varunmanik1.medium.com/setting-up-a-kubernetes-cluster-on-aws-ec2-with-ubuntu-22-04-lts-and-kubeadm-5c54930a4659
+##https://varunmanik1.medium.com/setting-up-a-kubernetes-cluster-on-aws-ec2-with-ubuntu-22-04-lts-and-kubeadm-5c54930a4659
 
 In master node open port 6443
 
