@@ -1,7 +1,9 @@
-                                      KOPS ON UBUNTU
+                                     
 
 ###Create Ubuntu EC2 instance
+
 #install AWSCLI
+
 ```sh
 curl https://s3.amazonaws.com/aws-cli/awscli-bundle.zip -o awscli-bundle.zip
 ```
