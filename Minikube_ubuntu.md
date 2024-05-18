@@ -30,8 +30,9 @@ sudo apt-get update
 ```sh
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
+```sh
 sudo service docker start
-
+```
  ================================================================
 # kubectl install
 
