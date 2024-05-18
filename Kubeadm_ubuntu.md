@@ -5,12 +5,14 @@
 
 ##https://varunmanik1.medium.com/setting-up-a-kubernetes-cluster-on-aws-ec2-with-ubuntu-22-04-lts-and-kubeadm-5c54930a4659
 
-In master node open port 6443
+#In master node open port 6443
 
 Kubeadm with ubuntu
+
 # Step 1: create two ec2 instances. master and worker .
 
 # Step 2: connect to it using SSH
+
 login as ubuntu user
  
  Do the following steps both master and worker up to swapoff -a
