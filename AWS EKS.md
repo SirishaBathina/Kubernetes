@@ -1,7 +1,6 @@
-                              Setup Kubernetes on Amazon EKS
+###You can follow same procedure in the official AWS document Getting started with Amazon EKS – eksctl
+# Pre-requisites:
 
-You can follow same procedure in the official AWS document Getting started with Amazon EKS – eksctl
-Pre-requisites:
 an EC2 Instance
 AWS EKS Setup
 Setup kubectl
@@ -10,6 +9,7 @@ a. Download kubectl version 1.20
 b. Grant execution permissions to kubectl executable
 c. Move kubectl onto /usr/local/bin
 d. Test that your kubectl installation was successful
+
 ```sh
 curl -o kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.19.6/2021-01-05/bin/linux/amd64/kubectl
 ```
@@ -35,7 +35,7 @@ sudo  mv /tmp/eksctl /usr/local/bin
 ```sh
 eksctl version
 ```
-##1.	Create an IAM Role and attached it to EC2 instance
+# 1.	Create an IAM Role and attached it to EC2 instance
 Note: create IAM user with programmatic access if your bootstrap system is outside of AWS
 IAM user should have access to
 
