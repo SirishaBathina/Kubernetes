@@ -20,7 +20,7 @@ chmod +x./kubectl
 mv./kubectl /usr/local/bin 
 ```
 ```sh
-      kubectl version --short --client
+kubectl version --short --client
 ```
 # Setup eksctl
 a. Download and extract the latest release
