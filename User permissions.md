@@ -85,10 +85,10 @@ sudo cp .kube/config /home/siri/.kube/config
 sudo vi /home/siri/.kube/config
 ```
 ```sh
-sudo chown siri:siri /home/john/.kube/config
+sudo chown siri:siri /home/siri/.kube/config
 ```
 ```sh
-sudo chown -R siri:siri /home/john/.kube/
+sudo chown -R siri:siri /home/siri/.kube/
 ```
 
 
