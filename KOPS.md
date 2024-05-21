@@ -99,3 +99,19 @@ kops edit ig --name=clusters.dev.siri.com nodes-ap-south-1b
 ```sh
 kops delete cluster --name clusters.dev.siri.com --yes
 ```
+
+
+
+
+
+
+
+
+
+Suggestions:
+ * list clusters with: kops get cluster
+ * edit this cluster with: kops edit cluster clusters.dev.siri.com
+ * edit your node instance group: kops edit ig --name=clusters.dev.siri.com nodes-ap-south-1b
+ * edit your control-plane instance group: kops edit ig --name=clusters.dev.siri.com control-plane-ap-south-1b
+
+Finally configure your cluster with: kops update cluster --name clusters.dev.siri.com --yes --admin
