@@ -1,6 +1,6 @@
                                      
 
-###Create Ubuntu EC2 instance
+# Create Ubuntu EC2 instance
 
 #install AWSCLI
 
