@@ -17,7 +17,7 @@ curl -o kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.19.6/2021-01-05/
 chmod +x ./kubectl
 ```
 ```sh
-mv./kubectl /usr/local/bin 
+mv ./kubectl /usr/local/bin 
 ```
 ```sh
 kubectl version --short --client
