@@ -25,6 +25,30 @@ tar xvfz node_exporter-1.8.0.linux-amd64.tar.gz
 systemctl restart node_exporter
 systemctl status node_exporter
 
+
+Node exporter systemd file
+============================
+[Unit]
+Description=Node Exporter
+Wants=network-online.target
+After=network-online.target
+[Service]
+ExecStart=/etc/node_exporter/node_exporter
+Restart=always
+[Install]
+WantedBy=multi-user.target
+
+
+Prometheus scrape file
+==========================
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+- job_name: node
+  static_configs:
+  - targets: ['localhost:9100']
+
  
 
 
