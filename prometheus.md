@@ -1,4 +1,5 @@
-
+#Kubernetes cluster is up and running
+###Open ports 9090,9100,3000
  
  ```sh
 wget https://github.com/prometheus/prometheus/releases/download/v2.52.0/prometheus-2.52.0.linux-amd64.tar.gz
