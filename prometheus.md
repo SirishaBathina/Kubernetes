@@ -26,8 +26,7 @@ Restart=always
 [Install]
 WantedBy=multi-user.target 
 ```
-```sh
-```
+
 ```sh
 systemctl daemon-reload
 ```
