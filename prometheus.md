@@ -1,8 +1,22 @@
- wget https://github.com/prometheus/prometheus/releases/download/v2.52.0/prometheus-2.52.0.linux-amd64.tar.gz
- tar xvfz prometheus-2.52.0.linux-amd64.tar.gz
-  mv prometheus-2.52.0.linux-amd64 /etc/prometheus
- nano /etc/systemd/system/prometheus.service
+
  
+ ```sh
+wget https://github.com/prometheus/prometheus/releases/download/v2.52.0/prometheus-2.52.0.linux-amd64.tar.gz
+```
+```sh
+ tar xvfz prometheus-2.52.0.linux-amd64.tar.gz
+```
+```sh
+```
+```sh
+```
+```sh
+  mv prometheus-2.52.0.linux-amd64 /etc/prometheus
+```
+```sh
+ nano /etc/systemd/system/prometheus.service
+```
+```sh 
  [Unit]
 Description=Prometheus
 Wants=network-online.target
@@ -12,24 +26,45 @@ ExecStart=/etc/prometheus/prometheus --config.file=/etc/prometheus/prometheus.ym
 Restart=always
 [Install]
 WantedBy=multi-user.target 
+```
+```sh
+```
+```sh
 systemctl daemon-reload
+```
+```sh
 systemctl enable prometheus
+```
+```sh
 systemctl restart  prometheus
+```
 
 
-
+```sh
 wget https://github.com/prometheus/node_exporter/releases/download/v1.8.0/node_exporter-1.8.0.linux-amd64.tar.gz
+```
+```sh
 tar xvfz node_exporter-1.8.0.linux-amd64.tar.gz
+```
+```sh
  mv node_exporter-1.8.0.linux-amd64  /etc/node_exporter
+```
+```sh
  nano /etc/systemd/system/node_exporter.service
- 
+``` 
+```sh
 systemctl restart node_exporter
+```
+```sh
 systemctl status node_exporter
-
+```
 
 Node exporter systemd file
 ============================
+```sh
 nano /etc/systemd/system/node_exporter.service
+```
+```sh
 [Unit]
 Description=Node Exporter
 Wants=network-online.target
@@ -39,12 +74,15 @@ ExecStart=/etc/node_exporter/node_exporter
 Restart=always
 [Install]
 WantedBy=multi-user.target
-
+```
 
 Prometheus scrape file
 ==========================
 
+```sh
 sudo vi /etc/prometheus/prometheus.yml
+```
+```sh
 global:
   scrape_interval: 15s
 
@@ -52,7 +90,7 @@ scrape_configs:
 - job_name: node
   static_configs:
   - targets: ['localhost:9100']
-
+```
  
 
 
