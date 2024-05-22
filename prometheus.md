@@ -84,7 +84,9 @@ systemctl status node_exporter
 
 Prometheus scrape file
 ==========================
-
+```sh
+rm -rf /etc/prometheus/prometheus.yml
+```
 ```sh
 sudo vi /etc/prometheus/prometheus.yml
 ```
