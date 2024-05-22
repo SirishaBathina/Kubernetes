@@ -36,6 +36,9 @@ systemctl enable prometheus
 ```sh
 systemctl restart  prometheus
 ```
+```sh
+systemctl status  prometheus
+```
 
 
 ```sh
