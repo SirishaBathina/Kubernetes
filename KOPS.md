@@ -27,7 +27,7 @@ sudo apt update
 sudo snap install aws-cli --classic
 ```
 ```sh
- aws –-version
+ aws --version
 ```
 ```sh
  aws configure
