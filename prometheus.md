@@ -82,6 +82,7 @@ systemctl restart node_exporter
 ```sh
 systemctl status node_exporter
 ```
+check in broswer with ip:9100
 
 Prometheus scrape file
 ==========================
