@@ -131,6 +131,31 @@ sudo apt-get install grafana
 ```sh
 sudo apt-get install grafana-enterprise
 ```
+
+(or)
+Grafana installation
+
+```sh
+wget https://dl.grafana.com/oss/release/grafana_8.5.10_amd64.deb
+```
+```sh
+sudo dpkg -i grafana_8.5.10_amd64.deb
+```
+```sh
+sudo apt-get install -f  # To resolve any dependencies
+```
+
+```sh
+curl -I https://packages.grafana.com/oss/deb
+```
+```sh
+sudo systemctl start grafana-server
+```
+```sh
+sudo systemctl enable grafana-server
+```
+
+
 # Install helm3
 
 Download scripts 
