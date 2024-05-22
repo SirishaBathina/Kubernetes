@@ -39,6 +39,7 @@ systemctl restart  prometheus
 ```sh
 systemctl status  prometheus
 ```
+Check in browser with Ip:9090
 
 # Install node_exporter
 
