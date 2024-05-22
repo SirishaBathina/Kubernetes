@@ -90,13 +90,41 @@ scrape_configs:
 ```
 
 # Install grafana
+```sh
+sudo apt-get install -y apt-transport-https software-properties-common wget
+```
+```sh
+sudo mkdir -p /etc/apt/keyrings/
+```
+```sh
+wget -q -O - https://apt.grafana.com/gpg.key | gpg --dearmor | sudo tee /etc/apt/keyrings/grafana.gpg > /dev/null
+```
+```sh
+echo "deb [signed-by=/etc/apt/keyrings/grafana.gpg] https://apt.grafana.com stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
 
+````
+```sh
+echo "deb [signed-by=/etc/apt/keyrings/grafana.gpg] https://apt.grafana.com beta main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
+```
+# Updates the list of available packages
+```sh
+sudo apt-get update
+```
+# Installs the latest OSS release:
+```sh
+sudo apt-get install grafana
+```
+# Installs the latest Enterprise release:
+```sh
+sudo apt-get install grafana-enterprise
+```
 # Install helm3
 
 Download scripts 
 
 
-```shcurl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
+```sh
+curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
 ```
 
 provide permission
