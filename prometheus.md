@@ -40,6 +40,7 @@ systemctl restart  prometheus
 systemctl status  prometheus
 ```
 
+# Install node_exporter
 
 ```sh
 wget https://github.com/prometheus/node_exporter/releases/download/v1.8.0/node_exporter-1.8.0.linux-amd64.tar.gz
