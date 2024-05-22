@@ -6,10 +6,7 @@ wget https://github.com/prometheus/prometheus/releases/download/v2.52.0/promethe
 ```sh
  tar xvfz prometheus-2.52.0.linux-amd64.tar.gz
 ```
-```sh
-```
-```sh
-```
+
 ```sh
   mv prometheus-2.52.0.linux-amd64 /etc/prometheus
 ```
