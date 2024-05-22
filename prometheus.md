@@ -237,6 +237,32 @@ kubectl get svc -n prometheus
 Access Grafana UI in the browser
 
 
+# How to Create Kubernetes Monitoring Dashboard?
+For creating a dashboard to monitor the cluster:
+Click '+' button on left panel and select ‘Import’.
+Enter 12740 dashboard id under Grafana.com Dashboard.
+Click ‘Load’.
+Select ‘Prometheus’ as the endpoint under prometheus data sources drop down.
+Click ‘Import’.
+This will show monitoring dashboard for all cluster nodes
+
+# How to Create Kubernetes Cluster Monitoring Dashboard?
+For creating a dashboard to monitor the cluster:
+Click '+' button on left panel and select ‘Import’.
+Enter 3119 dashboard id under Grafana.com Dashboard.
+Click ‘Load’.
+Select ‘Prometheus’ as the endpoint under prometheus data sources drop down.
+Click ‘Import’.
+This will show monitoring dashboard for all cluster nodes
+
+# Create POD Monitoring Dashboard
+For creating a dashboard to monitor the cluster:
+Click '+' button on left panel and select ‘Import’.
+Enter 6417 dashboard id under Grafana.com Dashboard.
+Click ‘Load’.
+Select ‘Prometheus’ as the endpoint under prometheus data sources drop down.
+Click ‘Import’.
+
  
 
 
