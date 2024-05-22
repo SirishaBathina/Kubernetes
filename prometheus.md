@@ -54,12 +54,7 @@ tar xvfz node_exporter-1.8.0.linux-amd64.tar.gz
 ```sh
  nano /etc/systemd/system/node_exporter.service
 ``` 
-```sh
-systemctl restart node_exporter
-```
-```sh
-systemctl status node_exporter
-```
+
 
 Node exporter systemd file
 ============================
@@ -76,6 +71,15 @@ ExecStart=/etc/node_exporter/node_exporter
 Restart=always
 [Install]
 WantedBy=multi-user.target
+```
+```sh
+systemctl enable node_exporter
+```
+```sh
+systemctl restart node_exporter
+```
+```sh
+systemctl status node_exporter
 ```
 
 Prometheus scrape file
