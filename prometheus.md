@@ -22,12 +22,14 @@ wget https://github.com/prometheus/node_exporter/releases/download/v1.8.0/node_e
 tar xvfz node_exporter-1.8.0.linux-amd64.tar.gz
  mv node_exporter-1.8.0.linux-amd64  /etc/node_exporter
  nano /etc/systemd/system/node_exporter.service
+ 
 systemctl restart node_exporter
 systemctl status node_exporter
 
 
 Node exporter systemd file
 ============================
+nano /etc/systemd/system/node_exporter.service
 [Unit]
 Description=Node Exporter
 Wants=network-online.target
@@ -41,6 +43,8 @@ WantedBy=multi-user.target
 
 Prometheus scrape file
 ==========================
+
+sudo vi /etc/prometheus/prometheus.yml
 global:
   scrape_interval: 15s
 
