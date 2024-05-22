@@ -1,4 +1,5 @@
 #Kubernetes cluster is up and running
+
 ###Open ports 9090,9100,3000
  
  ```sh
