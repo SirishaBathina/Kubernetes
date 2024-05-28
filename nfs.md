@@ -25,3 +25,9 @@ sudo exportfs -a
 ```sh
   sudo systemctl status nfs-kernel-server
 ```
+```sh
+apt install nfs-common
+```
+```sh
+mount -t NFS <server ip>:/mnt/nfs_share /mn
+```
