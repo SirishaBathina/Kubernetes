@@ -20,5 +20,8 @@ sudo exportfs -a
  sudo exportfs -v or showmount -e 
 ```
 ```sh
-  sudo systemctl restart NFS-kernel-server
+  sudo systemctl start nfs-kernel-server
+```
+```sh
+  sudo systemctl status nfs-kernel-server
 ```
