@@ -99,6 +99,9 @@ kops edit ig --name=clusters.dev.siri.com nodes-ap-south-1b
 ```sh
 kops delete cluster --name clusters.dev.siri.com --yes
 ```
+```sh
+ kops update cluster --name clusters.dev.siri.com --yes --admin
+```
 
 
 
