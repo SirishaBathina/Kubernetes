@@ -135,11 +135,18 @@ kubectl get ingress
 ```sh
 curl afe73fc7dbee7433db50796c16ade927-2b7ce3742e5bb884.elb.ap-south-1.amazonaws.com
 ```
+# troubleshoot purpose
 
 ```sh
 kubectl exec -it <pod-name> -n <namespace> -- /bin/bash
 ```
 ```sh
 kubectl logs -n ingress-nginx <nginx-ingress-controller-pod>
+```
+```sh
+kubectl logs my-app-5c6fdc8b57-gfzcj
+```
+```sh
+kubectl logs my-app-<pod-id>
 ```
 
