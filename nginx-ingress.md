@@ -64,7 +64,10 @@ spec:
         - containerPort: 80
 ```
 ```sh
+vi svc.yaml
+```
 
+```sh
 apiVersion: v1
 kind: Service
 metadata:
