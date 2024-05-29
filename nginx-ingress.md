@@ -1,4 +1,4 @@
-# You can follow the steps from the above link else follow the below steps👇
+# You can follow the steps from the  link else follow the below steps👇
 
 ```sh
 https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.2/deploy/static/provider/aws/
