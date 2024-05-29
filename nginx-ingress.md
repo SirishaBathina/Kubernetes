@@ -32,5 +32,10 @@ We have created the ingress controller but let’s see what and all the things a
 ```sh
 kubectl get all -n ingress-nginx
 ```
+If you go to the AWS management console we can see the network load balancer has been created
 
 # Next, we can deploy our application using the ingress controller.
+
+
+
+
