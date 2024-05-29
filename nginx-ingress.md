@@ -20,3 +20,9 @@ cd provider
 ```sh
 cd aws
 ```
+```sh
+kubectl apply -f deploy.yaml
+```
+ ```sh
+kubectl get ns
+```
