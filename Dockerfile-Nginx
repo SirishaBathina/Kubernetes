@@ -1,3 +1,4 @@
+```sh 
 # Use the official Nginx image as the base image
 FROM nginx:latest
 
@@ -12,3 +13,18 @@ EXPOSE 80
 
 # Start Nginx when the container launches
 CMD ["nginx", "-g", "daemon off;"]
+```
+
+```sh
+docker build -t devopsbathinasirisha28/nginxapp:latest .
+```
+```sh
+docker run -d -p 80:80 --name my-app devopsbathinasirisha28/nginxapp:latest
+```
+```sh
+docker push devopsbathinasirisha28/nginxapp:latest
+```
+```sh
+docker login
+```
+
