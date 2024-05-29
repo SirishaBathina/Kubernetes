@@ -94,6 +94,10 @@ kubectl get pods
 ```sh
 kubectl describe svc my-app
 ```
+
+###Our service is up and running. Now let’s create the ingress controller
+
+# Create new file to create ingress controller
 ```sh
 vi ingress.yaml
 ```
@@ -125,3 +129,7 @@ kubectl apply -f ingress.yaml
 ```sh
 kubectl get ingress
 ```
+```sh
+curl afe73fc7dbee7433db50796c16ade927-2b7ce3742e5bb884.elb.ap-south-1.amazonaws.com
+```
+
