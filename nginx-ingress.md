@@ -25,6 +25,8 @@ cd provider
 cd aws
 ```
 ```sh
+# Enter the below command to create the controller
+
 kubectl apply -f deploy.yaml
 ```
  ```sh
