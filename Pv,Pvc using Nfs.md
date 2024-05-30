@@ -1,9 +1,9 @@
-                                                   Pv, Pvc using nfs-server
+                                                  # Pv, Pvc using nfs-server
 
 
-Ec2Instances:
-Kops-up&running
- Nfs-server
+##Ec2Instances:
+*Kops-up&running
+*Nfs-server
 
 Create a Nfs-server instance open port 2049 in  nfs-server instance and worker nodes in the cluster.(all nodes open port and install nfs)
 Create volume and attach to kops
