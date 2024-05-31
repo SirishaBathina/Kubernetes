@@ -151,4 +151,13 @@ kubectl logs my-app-5c6fdc8b57-gfzcj
 ```sh
 kubectl logs my-app-<pod-id>
 ```
+```sh
+docker run -dit nginx
+```
+```sh
+docker images
+```
+```sh
+docker run -dit -p 80:80 nginx:latest
+```
 
