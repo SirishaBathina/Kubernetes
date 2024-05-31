@@ -61,7 +61,7 @@ spec:
     spec:
       containers:
       - name: my-app
-        image: devopsbathinasirisha28/nginxapp:latest
+        image: nginx:latest
         ports:
         - containerPort: 80
 ```
