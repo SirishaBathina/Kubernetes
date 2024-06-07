@@ -161,3 +161,8 @@ docker images
 docker run -dit -p 80:80 nginx:latest
 ```
 
+Tag image
+```sh
+docker tag nginx:latest nginx:v1
+```
+
