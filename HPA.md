@@ -1,7 +1,7 @@
 # https://medium.com/@muppedaanvesh/a-hands-on-guide-to-kubernetes-horizontal-vertical-pod-autoscalers-%EF%B8%8F-58903382ef71
 ## Autoscaling:
 Autoscaling is a way to automatically scale up or down the n.of compute resources that are allocated to our application based on demand
-###Types:
+## Types:
 * Horizontal Pod Autoscaling (HPA)
 * Vertical Pod Autoscaling (VPA)
 ##Horizontal Pod Autoscaling (HPA):
@@ -55,7 +55,7 @@ Apply the deployment:
 ```sh
 kubectl apply -f hpa-deployment.yaml
 ```
-# Step 2: Create a Service
+## Step 2: Create a Service
 Create a file named nginx-service.yaml with the following content:
 
 ```sh
@@ -75,7 +75,7 @@ Apply the service:
 ```sh
 kubectl apply -f nginx-service.yaml
 ```
-# Step 3: Create an HPA
+## Step 3: Create an HPA
 Create a file named hpa.yaml with the following content:
 
 ```sh
