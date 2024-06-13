@@ -1,9 +1,9 @@
 # https://medium.com/@muppedaanvesh/a-hands-on-guide-to-kubernetes-horizontal-vertical-pod-autoscalers-%EF%B8%8F-58903382ef71
-##Autoscaling:
+## Autoscaling:
 Autoscaling is a way to automatically scale up or down the n.of compute resources that are allocated to our application based on demand
-Types:
-*Horizontal Pod Autoscaling (HPA)
-*Vertical Pod Autoscaling (VPA)
+###Types:
+* Horizontal Pod Autoscaling (HPA)
+* Vertical Pod Autoscaling (VPA)
 ##Horizontal Pod Autoscaling (HPA):
 Horizontal Pod Autoscaling (HPA) automatically scales the number of pods based on  CPU utilization (or other select metrics). This allows your application to scale out (add more pods) or scale in (reduce the number of pods).
 # To setup HPA in K8Scluster:
