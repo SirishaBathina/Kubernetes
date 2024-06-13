@@ -1,4 +1,4 @@
-# https://medium.com/@muppedaanvesh/a-hands-on-guide-to-kubernetes-horizontal-vertical-pod-autoscalers-%EF%B8%8F-58903382ef71
+###https://medium.com/@muppedaanvesh/a-hands-on-guide-to-kubernetes-horizontal-vertical-pod-autoscalers-%EF%B8%8F-58903382ef71
 ## Autoscaling:
 Autoscaling is a way to automatically scale up or down the n.of compute resources that are allocated to our application based on demand
 ## Types:
