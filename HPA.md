@@ -6,16 +6,16 @@ Autoscaling is a way to automatically scale up or down the n.of compute resource
 * Vertical Pod Autoscaling (VPA)
 ##Horizontal Pod Autoscaling (HPA):
 Horizontal Pod Autoscaling (HPA) automatically scales the number of pods based on  CPU utilization (or other select metrics). This allows your application to scale out (add more pods) or scale in (reduce the number of pods).
-# To setup HPA in K8Scluster:
+## To setup HPA in K8Scluster:
 * Install metric server
 * Deploy sample app
 * Create a service
 * Deploy HPA
 * Increase the load
 * Monitor the HPA Events
-# Metric Server Setup
+## Metric Server Setup
 The Metrics Server collects resource usage metrics from the cluster’s nodes and pods, which are necessary for autoscaling decisions.
-# Download the Components Manifest:
+## Download the Components Manifest:
 
 ```sh
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
