@@ -53,7 +53,7 @@ Apply the deployment:
 ```sh
  kubectl apply -f vpa-deployment.yaml
 ```
-Step 3: Create a VPA
+## Step 3: Create a VPA
 Create a file named vpa.yaml with the following content:
 
 ```sh
@@ -84,24 +84,30 @@ Apply the VPA:
 ```sh
 kubectl apply -f vpa.yaml
 ```
-Step 4: Testing
+## Step 4: Testing
 First, let’s check the initial CPU utilization of the target pods:
 
- 
+```sh
+ kubectl top pods
+```
 Verify the CPU requests for the pods:
 ```sh
 kubectl get po -o jsonpath='{.items[*].spec.containers[*].resources.requests.cpu}'
 ```
 Next, check the VPA status:
- 
+```sh
+ kubectl get vpa
+```
 Wait for some time and then check the pod status again:
- 
+```sh
+ kubectl get pods
+```
 Check the updated CPU requests:
 ```sh
 kubectl get po -o jsonpath="{.items[*].spec.containers[*].resources.requests.cpu}"
 ```
  
 Monitor the updated CPU utilization:
- 
+ kubectl top pods
 
 As observed, the pods were restarted and their CPU request values increased from 50m to 100m due to the VPA’s minAllowed setting. The pods will continue generating load until they reach their limits.
