@@ -10,7 +10,14 @@ git clone https://github.com/kubernetes/autoscaler.git
 ```sh
 cd autoscaler
 ````
-autoscaler/vertical-pod-autoscaler/hack  ==run the script
+
+```sh
+cd vertical-pod-autoscaler
+```
+```sh
+cd hack  
+```
+####run the script
 ```sh
 ./vpa-up.sh
 ``` 
