@@ -1,4 +1,4 @@
-kubectl version:
+1.kubectl version:
  - Check the client and server Kubernetes version.
 
 2. kubectl cluster-info:
