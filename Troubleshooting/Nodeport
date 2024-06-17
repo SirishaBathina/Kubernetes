@@ -1,0 +1,7 @@
+To acess nodeport internally
+kubectl get nodes -o wide
+internal-ip>:portnum
+ kubectl exec -it nginx-pod bash
+apt update
+apt install curl -y
+curl 172.20.212.3:31234
