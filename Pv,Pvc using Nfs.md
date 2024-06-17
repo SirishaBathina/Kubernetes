@@ -72,7 +72,7 @@ spec:
     - nfsvers=4.1
   nfs:
     path: /app
-    server: 43.204.212.61<nfs-server-Ip)
+    server: 43.204.212.61 (nfs-server-Ip)
 ```
 ```sh
 
