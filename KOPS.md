@@ -118,3 +118,17 @@ Suggestions:
  * edit your control-plane instance group: kops edit ig --name=clusters.dev.siri.com control-plane-ap-south-1b
 
 Finally configure your cluster with: kops update cluster --name clusters.dev.siri.com --yes --admin
+
+
+
+troubleshoot
+
+kops export kubecfg --name clusters.dev.siri.com --admin
+kops get cluster --name clusters.dev.siri.com -o yaml
+ nslookup api.clusters.dev.siri.com
+   25  kops get cluster --name clusters.dev.siri.com -o yaml
+   26  kops export kubecfg --name clusters.dev.siri.com --admin
+   27  curl -vI https://api.clusters.dev.siri.com:443
+   28  kubectl get nodes
+   29  kops update cluster --name clusters.dev.siri.com --yes --admin
+
